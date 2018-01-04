@@ -3,9 +3,12 @@
 
 header.header
     .container.container--header
+        input.header__checkbox#checkbox(type="checkbox")
+        label.header__btn(for="checkbox")
+            i.material-icons.header__btn-icon menu
         .logo-wrap
             img.logo(src="img/logo.png")
-        nav.nav
+        nav.nav#nav
             ul.nav__list
                 - for (var x = 0; x < nav.length; x++)
                 each item in nav
