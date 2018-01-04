@@ -1,0 +1,12 @@
+-
+    var nav = ["Home", "About us", "Structure", "Contact"];
+
+header.header
+    nav.nav
+        ul.nav__list
+            - for (var x = 0; x < nav.length; x++)
+            each item in nav
+                li.nav__item
+                    a.nav__link(href="#")= item
+    .logo-wrap
+        img.logo(src="img/logo.png")
