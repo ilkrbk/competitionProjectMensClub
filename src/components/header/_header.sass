@@ -1,0 +1,30 @@
+.header
+    padding: 15px 0
+    background: $black
+    position: relative
+
+.container--header
+    width: 1200px
+
+.logo-wrap
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+
+.nav__list
+    display: flex
+
+.nav__item
+    margin-right: 15px
+    &:last-child
+        margin-right: 0
+
+.nav__link
+    display: inline-block
+    padding: 10px 13px
+    border: 1px solid transparent
+    transition: all .2s ease-in
+    @include font ($basicFont, 1.2rem, $white)
+    &:hover
+        border: 1px solid $basicYellow
