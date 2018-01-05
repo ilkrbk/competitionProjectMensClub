@@ -1,0 +1,17 @@
+-
+    var text = [
+        {
+            class: "part__paragraph1",
+            content: "СЕГОДНЯ ОТКРЫВАЮТСЯ РАЗЛИЧНЫЕ КАФЕ И ДРУГИЕ МЕСТА ОТДЫХА КАЖДЫЙ ДЕНЬ"
+        },
+        {
+            class: "part__paragraph2",
+            content: "НО КАК ЧАСТО ОТКРЫВАЮТСЯ МЕСТА,СПОСОБНЫЕ ИЗМЕНИТЬ ВАШУ ЖИЗНЬ?"
+        }
+    ]
+
+.text-block
+    .container.container--content
+        - for (var k = 0; k < text.length; k++)
+        each paragraph in text
+            p(class= paragraph.class)= paragraph.content

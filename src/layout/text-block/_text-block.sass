@@ -1,0 +1,33 @@
+.text-block
+    padding: 70px 0
+    display: flex
+    @include largeDevice
+        padding: 50px 20px
+    @include mediumDevice
+        padding: 30px 20px 
+
+.part__paragraph1
+    margin-top: 0
+    @include font ($basicFont, 2.5rem, $basicBlue)
+    font-weight: 700
+    @include largeDevice
+        font-size: 1.8rem
+    @include mediumDevice
+        font-size: 1.3rem
+    @include smallDevice
+        text-align: center
+
+.part__paragraph2
+    margin-top: 30px
+    @include font ('Comfortaa', 1.3rem, $basicBlue)
+    padding: 20px
+    border: 2px solid $basicBlue
+    text-transform: lowercase
+    display: inline
+    @include mediumDevice
+        margin-top: 15px
+    @include smallDevice
+        padding: 10px
+        font-size: 1rem
+
+
