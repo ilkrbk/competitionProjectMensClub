@@ -1,0 +1,50 @@
+.advantages
+    width: 100%
+    height: 100vh
+    background: #212121
+    position: relative
+    padding: 30px 30px 30px 70%
+    &:before
+        content: ""
+        position: absolute
+        width: 65%
+        height: 100%
+        top: 0
+        left: 0
+        background: url(../img/bg-advantages.jpg)
+        background-size: cover
+    
+.advantages__slider-nav-list
+    position: absolute
+    top: 50%
+    left: 65%
+    transform: translate(-50%, -50%) rotate(90deg)
+    width: 570px
+    > .slick-list .slick-track .slick-current
+        background: rgb(255, 192, 0)
+
+.advantages__slider-nav-item
+    width: 70px !important
+    height: 70px
+    border-radius: 50%
+    display: flex !important
+    justify-content: center !important
+    align-items: center !important
+    background: #cccccc
+    margin: 0 60px
+    > i 
+        transform: rotate(-90deg)
+        font-size: 1.5rem
+
+.advantages__title
+    @include font ('Comfortaa', 2.2rem, $white)
+    margin-top: 20px
+
+.advantages__slider-title
+    @include font ($basicFont, 1.8rem, $white)
+    margin-top: 20px
+
+.advantages__slider-descr
+    @include font ($basicFont, 1rem, $white)
+    margin-top: 20px
+

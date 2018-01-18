@@ -11,4 +11,4 @@ function Navigation(t) {
     this.events_(), this.overlay.classList.add(t.overlayClass), console.log(t.navigationId);
   }, this.init_();
 }const nav = { btnId: "checkbox", navigationId: "nav", activeNavClass: "nav--active", overlayClass: "overlay" },
-      offCanvas = new Navigation(nav);
+      offCanvas = new Navigation(nav);$(".advantages__slider-list").slick({ slidesToShow: 1, arrows: !1, fade: !0, asNavFor: ".advantages__slider-nav-list" }), $(".advantages__slider-nav-list").slick({ arrows: !1, slidesToShow: 3, asNavFor: ".advantages__slider-list", dots: !1, focusOnSelect: !0 });

@@ -1,1 +1,2 @@
 //= offCanvas.js
+//= slick.js

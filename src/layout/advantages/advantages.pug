@@ -1,0 +1,37 @@
+-
+    var advantagesItem = [
+        {
+            srcIcon: "fa-rocket",
+            title: "Уникальность",
+            descr: "В Украине ещё до нас такого не было."
+        },
+        {
+            srcIcon: "fa-users",
+            title: "Формирование нового сообщества",
+            descr: "Новые знакомства , новые интересы , общие цели."
+        },
+        {
+            srcIcon: "fa-users",
+            title: "Атмосфера",
+            descr: "Окружение в стиле Викторианской эпохи Англии дает расслабиться и почувствовать более высокий статус."
+        },
+        {
+            srcIcon: "fa-users",
+            title: "Окружение",
+            descr: "Людьми-единомышленниками, которое вдохновляет и побуждает к покорению новых вершин."
+        }
+    ]
+
+.advantages
+    h2.advantages__title Наши преимущества
+    ul.advantages__slider-nav-list
+        - for (var j = 0; j < advantagesItem.length; j++)
+        each item in advantagesItem
+            li.advantages__slider-nav-item
+                i.fa(aria-hidden="true" class= item.srcIcon)
+    ul.advantages__slider-list
+        - for (var j = 0; j < advantagesItem.length; j++)
+        each item in advantagesItem
+            li.advantages__slider-item
+                h3.advantages__slider-title= item.title
+                p.advantages__slider-descr= item.descr
