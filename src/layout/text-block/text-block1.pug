@@ -1,0 +1,17 @@
+-
+    var text = [
+        {
+            class: "part__paragraph1",
+            content: "ИМЕННО ЭТИМ ВОПРОСОМ МЫ ЗАДАЛИСЬ С НАЧАЛА ПРИ СОЗДАНИИ ПРОЕКТА"
+        },
+        {
+            class: "part__paragraph2",
+            content: "НАША ЦЕЛЬ - СОЗДАНИЕ БЛАГОПРИЯТНОЙ ОБСТАНОВКИ ДЛЯ РАЗВИТИЯ СООБЩЕСТВА ПРОДУКТИВНЫХ ЛЮДЕЙ, КОТОРЫЕ СТРЕМЯТСЯ К РАЗВИТИЮ!"
+        }
+    ]
+
+.text-block
+    .container.container--content
+        - for (var k = 0; k < text.length; k++)
+        each paragraph in text
+            p(class= paragraph.class)= paragraph.content
