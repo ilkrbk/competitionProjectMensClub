@@ -13,6 +13,16 @@
         left: 0
         background: url(../img/bg-advantages.jpg)
         background-size: cover
+    @include largeDevice
+        padding-left: 55%
+        &:before
+            width: 50%
+    @include mediumDevice
+        padding-left: 57%
+    @include smallDevice
+        padding-left: 80px
+        &:before
+            background: none
     
 .advantages__slider-nav-list
     position: absolute
@@ -22,6 +32,10 @@
     width: 570px
     > .slick-list .slick-track .slick-current
         background: rgb(255, 192, 0)
+    @include largeDevice
+        left: 50%
+    @include smallDevice
+        left: 35px
 
 .advantages__slider-nav-item
     width: 70px !important
@@ -35,16 +49,25 @@
     > i 
         transform: rotate(-90deg)
         font-size: 1.5rem
+    @include smallDevice
+        border-radius: 50% 50% 0 0 
 
 .advantages__title
     @include font ('Comfortaa', 2.2rem, $white)
     margin-top: 20px
+    @include mediumDevice
+        font-size: 1.8rem
+    @include smallDevice
+        font-size: 1.5rem
 
 .advantages__slider-title
     @include font ($basicFont, 1.8rem, $white)
     margin-top: 20px
+    @include mediumDevice
+        font-size: 1.4rem
+    @include smallDevice
+        font-size: 1.2rem
 
 .advantages__slider-descr
     @include font ($basicFont, 1rem, $white)
     margin-top: 20px
-
