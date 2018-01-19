@@ -1,0 +1,30 @@
+-
+    var cards = [
+        {
+            srcImg: "img/ikorobka.jpg",
+            title: "Bogdan Krisko",
+            descr: "hr"
+        },
+        {
+            srcImg: "img/ikorobka.jpg",
+            title: "Ilya Korobka",
+            descr: "Developer"
+        },
+        {
+            srcImg: "img/ikorobka.jpg",
+            title: "Kiril",
+            descr: "Designer"
+        }
+    ]
+
+.cards-with-us
+    .container.container--content
+        h2.cards-with-us__title 
+            | Наша команда
+        ul.cards-with-us__list
+            - for(var j = 0; j < cards.length; j++)
+            each item in cards
+                li.cards-with-us__item
+                    img.cards-with-us__item__img(src= item.srcImg)
+                    h3.cards-with-us__item-title= item.title
+                    p.cards-with-us__item-descr= item.descr

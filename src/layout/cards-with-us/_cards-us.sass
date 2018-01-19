@@ -1,0 +1,60 @@
+.cards-with-us
+    padding: 60px 0
+    @include largeDevice
+        padding: 60px 20px
+    @include smallDevice
+        padding: 20px
+
+.cards-with-us__list
+    display: flex
+    justify-content: space-between
+    margin-top: 70px
+    @media screen and (max-width: 980px) 
+        align-items: center
+        flex-direction: column
+    @include smallDevice
+        margin-top: 30px
+
+.cards-with-us__title
+    text-align: center
+    @include font ('Comfortaa', 5rem, $basicBlue)
+    margin-top: 30px 
+    @include mediumDevice 
+        font-size: 2.5rem
+
+.cards-with-us__item
+    width: 280px
+    background: $white
+    text-align: center
+    display: flex
+    flex-direction: column
+    box-shadow: 0 0 15px rgba(0,0,0,.5) 
+    justify-content: space-around
+    padding: 30px
+    transition: all .2s ease-in
+    margin: 0 5px
+    &:hover
+        transform: scale(1.2)
+    @media screen and (max-width: 980px) 
+        width: 80%
+        margin: 15px 0 
+    @include smallDevice
+        width: 280px
+    @include extraSmallDevice
+        &:hover
+            transform: scale(1.1)
+
+.cards-with-us__item__img
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    margin: 0 auto
+    border: 3px solid $basicBlue
+
+.cards-with-us__item-title
+    @include font ('Comfortaa', 1.8rem, $basicBlue)
+    margin-top: 30px
+
+.cards-with-us__item-descr
+    @include font ($basicFont, 1.2rem, $basicBlue)
+    margin-top: 15px

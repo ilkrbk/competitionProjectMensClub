@@ -1,5 +1,5 @@
 .cards-info
-    padding: 100px 0
+    padding: 100px 0 0 0
     background: $white
     position: relative
     &:before
@@ -29,9 +29,6 @@
     @include smallDevice
         padding: 40px 20px
 
-.container-cards
-    width: 100%
-
 .cards-info__title
     @include font ('Comfortaa', 2.5rem, $white)
     margin-top: 0
@@ -48,22 +45,23 @@
 
 .cards-info__list
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     position: relative
     z-index: 8
-    @include largeDevice
-        width: 100%
-    @include smallDevice
+    @media screen and (max-width: 980px) 
         align-items: center
         flex-direction: column
 
 .cards-info__item
     position: relative
-    width: 250px
+    width: 280px
     @include largeDevice
         margin: 0 5px
+    @media screen and (max-width: 980px) 
+        width: 80%
+        margin: 15px 0
     @include smallDevice
-        margin: 5px 0
+        width: 280px
 
 .cards-info__title-item,
 .cards-info__descr-item
@@ -104,4 +102,3 @@
 .cards-info--hover:hover .cards-info__card-back 
     transform: rotateY(0)
  
-
