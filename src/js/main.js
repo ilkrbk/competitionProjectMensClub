@@ -2,3 +2,4 @@
 //= slick.js
 //= paths.js
 //= init.js
+//= scrollTop.js

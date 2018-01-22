@@ -21,4 +21,11 @@ function Navigation(c) {
       this.animate({ fill: l.fill }, 300);
     });
   }
+}), $(function () {
+  $(".back_to_top").on("click", function () {
+    $("body, html").animate({ scrollTop: 0 }, 500);
+  }), $(window).on("scroll", function () {
+    var c = $(".top-block").height(),
+        l = $(".back_to_top");$(window).scrollTop() >= c ? l.addClass("back_to_top--active") : l.removeClass("back_to_top--active");
+  });
 });
