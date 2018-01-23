@@ -2,13 +2,30 @@
     width: 100%
     height: 100vh
     padding: 50px
-    display: flex
     background: #0a0a0a
-    @include largeDevice
-        padding: 20px
     @media screen and (max-width: 1100px)
         height: auto
         flex-direction: column
+        padding: 30px
+
+.map-block__paragraph-wrap
+    width: 700px
+    margin: 0 auto
+    @media screen and (max-width: 810px) 
+        width: 100%
+    
+.map-block__slider
+    width: 100%
+    height: calc(100vh - 100px)
+    > .slick-prev
+        display: none !important
+    > .slick-next
+        &:before
+            color: rgb(255, 192, 0) !important
+    > .slick-list
+        height: calc(100vh - 100px)
+        > .slick-track
+            height: calc(100vh - 100px)
 
 .map-block__title
     @include font ('Comfortaa', 3.5rem, $white)
@@ -16,20 +33,17 @@
     margin-top: 0
     @media screen and (max-width: 1100px)
         font-size: 2.2rem
+    @include smallDevice
+        font-size: 1.8rem
 
 .map-block__map-wrap
-    width: 50%
     position: relative
-    @media screen and (max-width: 1100px)
-        width: 100%
-        order: 2
-        height: 370px
-    @include smallDevice
-        display: none
+    height: 100%
+
 
 .map-block__map-block
     position: absolute
-    top: 50%
+    top: 60%
     left: 50%
     transform: translate(-50%, -50%)
 
@@ -43,18 +57,20 @@
         position: relative !important
         top: -285px !important
         left: -445px !important
+    @include smallDevice
+        transform: scale(0.5)
 
 .map-block__text-wrap
-    width: 50%
     @media screen and (max-width: 1100px)
         width: 100%
-        order: 1
 
 .map-block__paragraph1
     @include font ('Comfortaa', 1.5rem, $white)
     @media screen and (max-width: 1100px)
         font-size: 1.2rem
         margin-top: 15px
+    @include smallDevice
+        font-size: 1rem
 
 .map-block__paragraph2
     @include font ('Comfortaa', 1.3rem, $white)
@@ -63,3 +79,6 @@
     @media screen and (max-width: 1100px)
         font-size: 1rem
         margin-top: 15px
+    @include smallDevice
+        font-size: 1rem
+        padding: 12px

@@ -1,0 +1,36 @@
+-
+    var economy = [
+        {
+            title: "кост",
+            num: "5354"
+        },
+        {
+            title: "barber",
+            num: "46567"
+        },
+        {
+            title: "bar",
+            num: "34543"
+        },
+        {
+            title: "lounge",
+            num: "45354"
+        },
+        {
+            title: "event",
+            num: "45353"
+        }
+    ]
+
+.economy
+    .economy__text-wrap
+        h2.economy__title
+            | Економика
+        p.economy__descr
+            | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos totam fugiat atque id dolorum eos vel aspernatur odit vero assumenda. Rem qui eius nemo accusantium assumenda ut excepturi harum tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos totam fugiat atque id dolorum eos vel aspernatur odit vero assumenda. Rem qui eius nemo accusantium assumenda ut excepturi harum tenetur?
+    ul.economy__list
+        - for(var j = 0; j < economy.length; j++)
+        each text in economy
+            li.economy__item
+                h3.economy__item-title= text.title
+                span.economy__item-num.number= text.num

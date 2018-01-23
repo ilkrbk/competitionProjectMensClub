@@ -3,3 +3,4 @@
 //= paths.js
 //= init.js
 //= scrollTop.js
+//= count.js

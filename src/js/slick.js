@@ -18,6 +18,13 @@ $('.gard-block__first-slider').slick({
     dots: false,
     slidesToShow: 1,
 });
+$('.map-block__slider').slick({
+    infinite: true,
+    speed: 300,
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+});
 $('.gard-block__slider-list').slick({
     centerMode: true,
     centerPadding: '60px',
