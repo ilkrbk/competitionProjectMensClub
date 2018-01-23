@@ -1,0 +1,35 @@
+-
+    var icon = [
+        {
+            srcImg: "img/ikorobka.jpg"
+        },
+        {
+            srcImg: "img/ikorobka.jpg"
+        },
+        {
+            srcImg: "img/ikorobka.jpg"
+        },
+        {
+            srcImg: "img/ikorobka.jpg"
+        },
+        {
+            srcImg: "img/ikorobka.jpg"
+        },
+        {
+            srcImg: "img/ikorobka.jpg"
+        }
+    ]
+
+.gard-block 
+    .gard-block__first-slider
+        .gard-block__title-block
+            h2.gard-block__title
+                | Производство Костюмов под своим брендом
+        .gard-block__slider
+            p.gard-block__descr
+                | Мы планируем производство мужских костюмов и аксессуаров под собственным брендом. Поскольку строить пошивочный цех это довольно дорого, то мы мы будем отдавать макеты наших изделий на фабрику и заказывать нужное количество,это намного выгоднее и дешевле. Основное в этом деле это нанять молодого и талантливого дизайнера,у которого будут не большие расценки,но при этом качественная работs
+            ul.gard-block__slider-list
+                - for(var r = 0; r < icon.length; r++)
+                each item in icon
+                    li.gard-block__slider-item
+                        img.gard-block__slider-img(src= item.srcImg)

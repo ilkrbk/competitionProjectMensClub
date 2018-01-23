@@ -1,0 +1,57 @@
+.gard-block
+    width: 100%
+    height: 100vh
+    padding: 50px
+    background: #0a0a0a
+    @include smallDevice
+        padding: 30px
+
+.gard-block__first-slider
+    > .slick-prev
+        display: none !important
+    > .slick-next
+        &:before
+            color: rgb(255, 192, 0) !important
+
+.gard-block__title-block,
+.gard-block__slider
+    position: relative
+    width: 100%
+    height: calc(100vh - 100px)
+
+.gard-block__slider
+    display: flex !important
+    flex-direction: column !important
+    justify-content: space-between !important
+
+.gard-block__descr
+    width: 700px
+    margin: 50px auto !important
+    @include font ('Comfortaa', 1.3rem, $white)
+    text-align: center
+    @media screen and (max-width: 810px)
+        width: 100%
+    @include smallDevice
+        font-size: 0.8rem
+        margin: 0 auto !important
+
+.gard-block__title
+    position: absolute
+    top: 50%
+    left: 50%
+    text-align: center
+    transform: translate(-50%, -50%)
+    width: 700px
+    border: 5px solid rgb(255, 192, 0)
+    padding: 30px
+    margin-top: 0
+    @include font ('Comfortaa', 3rem, $white)
+    @media screen and (max-width: 810px)
+        width: 90%
+    @include smallDevice
+        font-size: 1.5rem
+        padding: 15px
+
+
+.gard-block__slider-item
+    margin: 0 10px
