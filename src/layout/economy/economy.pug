@@ -1,33 +1,33 @@
 -
     var economy = [
         {
-            title: "кост",
-            num: "5354"
+            title: "Костюмы",
+            num: "610000"
         },
         {
-            title: "barber",
-            num: "46567"
+            title: "Барбершоп",
+            num: "500000"
         },
         {
-            title: "bar",
-            num: "34543"
+            title: "Бар",
+            num: "977000"
         },
         {
-            title: "lounge",
-            num: "45354"
+            title: "Lounge zone",
+            num: "2550000"
         },
         {
-            title: "event",
-            num: "45353"
+            title: "Ивент комната",
+            num: "1470000"
         }
     ]
 
-.economy
+.economy#economy
     .economy__text-wrap
         h2.economy__title
             | Економика
         p.economy__descr
-            | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos totam fugiat atque id dolorum eos vel aspernatur odit vero assumenda. Rem qui eius nemo accusantium assumenda ut excepturi harum tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos totam fugiat atque id dolorum eos vel aspernatur odit vero assumenda. Rem qui eius nemo accusantium assumenda ut excepturi harum tenetur?
+            | За счёт того что мы взяли базу для реализации уже практически готовое помещение,то затраты значительно меньше,чем если бы начать с полного нуля.Сразу отпадают затраты на аренду и полное обустройство помещения.
     ul.economy__list
         - for(var j = 0; j < economy.length; j++)
         each text in economy

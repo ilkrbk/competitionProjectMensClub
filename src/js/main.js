@@ -4,3 +4,4 @@
 //= init.js
 //= scrollTop.js
 //= count.js
+//= diadrama.js

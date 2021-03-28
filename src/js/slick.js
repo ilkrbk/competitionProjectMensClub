@@ -25,6 +25,13 @@ $('.map-block__slider').slick({
     dots: false,
     slidesToShow: 1,
 });
+$('.problem__wrap').slick({
+    infinite: true,
+    speed: 300,
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+});
 $('.gard-block__slider-list').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -54,3 +61,14 @@ $('.gard-block__slider-list').slick({
     //   }
     // ]
   });
+
+  
+// $('.risk__list').slick({
+//     dots: false,
+//     autoplaySpeed: 2000,
+//     arrows: false,
+//     infinite: true,
+//     speed: 500,
+//     fade: true,
+//     cssEase: 'linear'
+//   });

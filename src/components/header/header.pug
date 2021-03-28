@@ -1,5 +1,30 @@
 -
-    var nav = ["Home", "About us", "Structure", "Contact"];
+    var nav = [
+        {
+            href: "#top",
+            text: "Главная"
+        },
+        {
+            href: "#problem",
+            text: "Проблемы"
+        },
+        {
+            href: "#advantages",
+            text: "Преимущества"
+        },
+        {
+            href: "#gard",
+            text: "Костюмы"
+        },
+        {
+            href: "#economy",
+            text: "Економика"
+        },
+        {
+            href: "#analytics",
+            text: "Аналитика"
+        }
+    ]
 
 header.header
     .container.container--header
@@ -8,9 +33,9 @@ header.header
             i.material-icons.header__btn-icon menu
         .logo-wrap
             img.logo(src="img/logo.png")
-        nav.nav#nav
+        nav.nav.navbar-collapse#nav
             ul.nav__list
                 - for (var x = 0; x < nav.length; x++)
                 each item in nav
                     li.nav__item
-                        a.nav__link(href="#")= item
+                        a.nav__link.js-scroll-trigger(href= item.href)= item.text

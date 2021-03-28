@@ -9,24 +9,48 @@
     text-align: center
     @include font ('Comfortaa', 3.5rem, $white)
     margin-top: 0
+    @include smallDevice
+        font-size: 1.5rem
 
 .economy__descr
     @include font ('Comfortaa', 1.3rem, $white)
     margin-top: 15px
+    @include smallDevice
+        font-size: 0.8rem
+        text-align: center
 
 .economy__list
     width: 100%
     display: flex
     justify-content: space-around
     background: #101907
+    @include smallDevice
+        flex-direction: column
     
 .economy__item
     padding: 30px
+    @media screen and (max-width: 850px) 
+       padding: 15px
+    @include smallDevice
+        padding: 30px 0
+        text-align: center
 
 .economy__item-title,
     margin-top: 0
-    @include font ('Comfortaa', 2rem, $white)
+    @include font ('Comfortaa', 1.5rem, $white)
+    @media screen and (max-width: 1350px) 
+        font-size: 1rem
+    @media screen and (max-width: 850px) 
+        font-size: 0.8rem
+    @include smallDevice
+        font-size: 1rem
 
 .economy__item-num
     margin-top: 15px
-    @include font ('Comfortaa', 4rem, $white)
+    @include font ('Comfortaa', 2.5rem, $white)
+    @media screen and (max-width: 1350px) 
+        font-size: 2rem
+    @media screen and (max-width: 850px) 
+        font-size: 1.5rem
+    @include smallDevice
+        font-size: 2.2rem

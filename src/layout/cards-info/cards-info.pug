@@ -1,29 +1,10 @@
--
-    var cards = [
-        {
-            title: "Постройка",
-            descr: "Этот вариант наиболее дорогостоящий. Он включает в себя покупку земли и постройки на ней здания."
-        },
-        {
-            title: "Аренда",
-            descr: "Аренда существующего здания, которое подходит под наш проект, с последующим его преображением под наши цели."
-        },
-        {
-            title: "Договор",
-            descr: "Договор с владельцем заведения для дальнейшего сотрудничества .Этот человек будет владеть заведением,а мы получать процент за управление и идею."
-        }
-    ]
-
 .cards-info
     .container.container--content
-        h2.cards-info__title Возможные базы для бизнеса
-        ul.cards-info__list
-            - for(var j = 0; j < cards.length; j++)
-            each item in cards
-                li.cards-info__item.cards-info--hover
-                    .cards-info__card-front
-                        h3.cards-info__title-item
-                            != item.title
-                    .cards-info__card-back
-                        p.cards-info__descr-item
-                            != item.descr
+        h2.cards-info__title Базы для бизнеса
+            .cards-info__item
+                .cards-info__card-front
+                    h3.cards-info__title-item
+                        | Договор
+                .cards-info__card-back
+                    p.cards-info__descr-item
+                        | Договор с владельцем заведения для дальнейшего сотрудничества .Этот человек будет владеть заведением,а мы получать процент за управление и идею.

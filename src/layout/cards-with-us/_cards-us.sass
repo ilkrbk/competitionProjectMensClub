@@ -1,4 +1,5 @@
 .cards-with-us
+    background: #0a0a0a
     padding: 60px 0
     @include largeDevice
         padding: 60px 20px
@@ -7,7 +8,7 @@
 
 .cards-with-us__list
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     margin-top: 70px
     @media screen and (max-width: 980px) 
         align-items: center
@@ -17,14 +18,13 @@
 
 .cards-with-us__title
     text-align: center
-    @include font ('Comfortaa', 5rem, $basicBlue)
+    @include font ('Comfortaa', 5rem, $white)
     margin-top: 30px 
     @include mediumDevice 
         font-size: 2.5rem
 
 .cards-with-us__item
     width: 280px
-    background: $white
     text-align: center
     display: flex
     flex-direction: column
@@ -43,18 +43,30 @@
     @include extraSmallDevice
         &:hover
             transform: scale(1.1)
+    &:first-child .cards-with-us__item__img-wrap .cards-with-us__item__img
+        left: 70%
+        top: 60%
 
-.cards-with-us__item__img
+.cards-with-us__item__img-wrap
     width: 200px
     height: 200px
     border-radius: 50%
+    border: 3px solid $white
+    overflow: hidden
+    position: relative
     margin: 0 auto
-    border: 3px solid $basicBlue
+
+.cards-with-us__item__img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 270px
 
 .cards-with-us__item-title
-    @include font ('Comfortaa', 1.8rem, $basicBlue)
+    @include font ('Comfortaa', 1.8rem, $white)
     margin-top: 30px
 
 .cards-with-us__item-descr
-    @include font ($basicFont, 1.2rem, $basicBlue)
+    @include font ($basicFont, 1.2rem, $white)
     margin-top: 15px
